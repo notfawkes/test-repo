@@ -1,0 +1,46 @@
+{
+  "name": "gitpro",
+  "version": "1.0.0",
+  "description": "Advanced Git Terminal with Interactive GUI",
+  "homepage": "./",
+  "main": "main.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "electron": "electron .",
+    "electron-build": "npm run build && electron-builder",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "latest",
+    "child_process": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "electron-is-dev": "latest",
+    "electron-squirrel-startup": "^1.0.1",
+    "framer-motion": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "path": "latest",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest",
+    "util": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "latest",
+    "electron": "latest",
+    "electron-builder": "latest",
+    "postcss": "^8.5",
+    "tailwindcss": "latest",
+    "typescript": "^5",
+    "wait-on": "latest"
+  }
+}
